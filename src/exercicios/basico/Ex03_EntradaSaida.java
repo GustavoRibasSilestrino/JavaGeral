@@ -35,23 +35,31 @@ public class Ex03_EntradaSaida {
         // TODO: crie o Scanner
         // import java.util.Scanner;, usada para ler entrada de dados, ou seja, capturar o que o usuario
         // digita no teclado enquanto o programa roda
+
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite seu nome");
-        String nome = "Gustavo";
 //        String nome = sc.nextLine();
+        String nome = sc.nextLine();
+
 
         System.out.println("Digite sua idade");
         int idade = sc.nextInt();
+
+
 
         System.out.println(String.format("Prazer, %s! Ano que vem você fará %s anos. ", nome, idade + 1));
         // Scanner = tipo, sc = nome da variavel, new Scanner = cria um objeto, (System.in) = argumento " de onde ler"
         // System.in = o argumento, Aqui você está dizendo de onde o Scanner vai ler dados. System.in representa a entrada padrão do sistema
 
+        System.out.println("Parabens!!");
+
+        sc.close();
         // TODO: leia nome e idade
-
+        //feito
         // TODO: imprima a mensagem final
-
+        // feito
         // TODO: feche o scanner
+        //feito
     }
 }

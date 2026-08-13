@@ -31,13 +31,52 @@ public class Ex04_CondicionaisSimples {
         int numero = 17; // troque o valor para testar
 
         // TODO: verifique se numero é par ou ímpar
+        if (numero %2 == 0 ) {
+            System.out.println( numero + " É par!");
+        }
+        else {
+            System.out.println( numero + " É ímpar!");
+        }
 
-        int idade = 25; // troque o valor para testar
+            // só 1 = é atribuição 2x o ==, é para comparar, perguntar se dois valores sao iguais
+
 
         // TODO: classifique a idade
+        int idade = 25; // troque o valor para testar
 
-        int a = 4, b = 9, c = 7; // troque os valores para testar
+        if ( idade<12){
+            System.out.println("Criança");
+        }
+        // else if eu uso quando tem mais de 2 valores
+        else if ( idade>=13 || idade<=17 ){
+            // else if usamos quando tem mais de 1° possibilidade dentro das opções
+            System.out.println("Adolescente");
+        }
+        else if ( idade>=18 || idade<=59 ){
+            System.out.println("Adulto");
+        }
+        else if ( idade>59){
+            System.out.println("Idoso");
+        }
 
         // TODO: descubra o maior entre a, b e c sem usar Math.max
+        int a = 4, b = 9, c = 7; // troque os valores para testar
+        int maior = 0;
+        if ( a > b ){
+            maior = a;
+            // aqui eu estou fazendo como se fosse uma batalha
+            System.out.println(maior);
+        }
+
+        else if ( b > a) {
+            maior = b;
+            System.out.println(maior);
+        }
+
+        else if ( c > b ) {
+            maior = c;
+            System.out.println(maior);
+        }
+
     }
 }
